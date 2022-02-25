@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Merriweather:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Montserrat:wght@300&display=swap" rel="stylesheet">    
+    <!--LINK ANIMATE.STYLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--LINK FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--LINK CSS-->
     <link rel="stylesheet" href="./css/styles.css">
     <title>Nuestra Tierra</title>
 </head>
 <body>
     <header>
         <img class="imgLogo" src="./img/Logo1sinFondo.png" alt="">
-        <h1 class="tituloHeader">Nuestra Tierra</h1>
+        <h1 class="tituloHeader animate__animated animate__fadeInDown">Nuestra Tierra</h1>
     </header>
-    <nav>
+    <nav data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
         <ul>
             <li><a href="./index.html">HOME</a></li>
             <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
@@ -28,7 +35,7 @@
     <main>
         <section class="primeraSection">
 
-            <div class="textoprimeraSeccion">
+            <div class="textoprimeraSeccion animate__animated animate__fadeInLeft">
                 <h2>Conocé Nuestra Tierra</h2>
                 <p>Desarrollamos y ponemos a disposición de la sociedad productos de bajo impacto
                     ambiental. Queremos contribuir a un planeta rico en biodiversidad. Todos tenemos la responsabilidad
@@ -36,7 +43,7 @@
                     y lo que hacemos con los residuos que generamos.</p>
             </div>
             
-            <div>
+            <div class="animate__animated animate__fadeInRight">
                 <img class="imgprimeraSection" src="./img/NuestraTierraMain.png" alt="">
             </div>
         </section>
@@ -55,18 +62,20 @@
                     Sumate vos también al eco-friendly style y cambia el mundo de un paso a la vez. </p>
             </div>
 
-            
         </section>
     </main>
     <footer>
         <img src="./img/Logo1sinFondo.png" alt="">
         <p>Nuestra Tierra - Todos los derechos reservados</p>
-        
         <div class="iconosFooter">
             <i class="fa-brands fa-whatsapp"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

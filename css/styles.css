@@ -11,6 +11,14 @@ body{
     height: auto;
 }
 /*FIN ESTILO BODY*/
+/*ESTILO FONTS*/
+h2{
+    font-family: 'Mali', cursive;
+}
+h3{
+    font-family: 'Mali', cursive;
+}
+/*FIN ESTILO FONTS*/
 /*ESTILO HEADER*/
 header{
     display: flex;
@@ -24,7 +32,7 @@ header{
 }
 
 .tituloHeader{
-    font-family: 'Alice', serif;
+    font-family: 'Mali', cursive;
     font-size: 3.75rem;
     font-weight: 100;
     text-align: center;
@@ -50,6 +58,9 @@ ul{
     width: 90%;
 }
 
+li :hover{
+    background-color: rgb(185, 159, 209);
+}
 a{
     text-decoration: none;
     font-size: 2rem;
@@ -111,12 +122,13 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 8rem;
+    
 }
 
 .segundasectionMain i{
     font-size: 2.6rem;
     padding-bottom: 1rem;
+    margin-top: 1rem;
 }
 /*FIN ESTILO MAIN 2° SECTION*/
 /*ESTILO MAIN 3° SECTION*/
@@ -136,6 +148,7 @@ p{
 
 .textoterceraSection{
     width: 35%;
+    margin-left: 3rem;
 }
 
 .textoterceraSection h2{
@@ -152,28 +165,61 @@ p{
 
 .primerasectionNosotros{
     display: flex;
-    justify-content: flex-end;
-    text-align: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.iconosNosotros{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    font-size: 1.6rem;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.parrafosNosotros{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    
     
 }
 
 .imgNosotros{
     max-width: 100%;
+    
 }
-
-.iconos-texto-Nosotros{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    font-size: 1.6rem;
-    justify-content: space-between;
-
+/*FIN ESTILO NOSOTROS 1° SECTION*/
+/*ESTILO 3° SECTION NOSOTROS*/
+.valoresNosotros{
+    padding-top: 3rem;
 }
-
-.parrafoNosotros{
-    border: 2px solid salmon;
+.valoresNosotros h2{
     text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
 }
+
+.listaIconos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8rem;
+    margin-bottom: 2rem;
+}
+
+.listaValores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+
 
 /*ESTILO 1° SECTION PRODUCTOS*/
 
@@ -283,7 +329,7 @@ input[type=text], textarea {
   }
 
   input[type=submit] {
-    background-color: rgb(216, 195, 235);
+    background-color: rgb(190, 147, 228);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -292,5 +338,20 @@ input[type=text], textarea {
   }
 
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #8144d1;
+  }
+
+  .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    
+  }
+
+  .container h2{
+      margin-bottom: 2rem;
   }

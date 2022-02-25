@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Merriweather:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--LINK ANIMATE.STYLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--LINK FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--LINK CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Nuestra Tierra</title>
 </head>
@@ -16,7 +23,7 @@
         <img class="imgLogo" src="../img/Logo1sinFondo.png" alt="">
         <h1 class="tituloHeader">Nuestra Tierra</h1>
     </header>
-    <nav>
+    <nav data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="./nosotros.html">NOSOTROS</a></li>
@@ -46,7 +53,7 @@
             <h2>Nuestra Tierra te propone una rutina de cuidado personal naturalmente amigable con vos y el planeta</h2>
         </section>
         <section class="contenedor-cards">
-            <article class="card">
+            <article data-aos="fade-right"  data-aos-duration="3000" class="card">
                 <img src="../img/img-card-3.png" alt="">
                 <p class="parrafoCards">Madera de bambú</p>
                 <p class="parrafoCards">3 suavidades</p>
@@ -54,7 +61,7 @@
                 <p class="parrafoCards">Vegano</p>
                 <p class="parrafoCards">Biodegradable</p>
             </article>
-            <article class="card">
+            <article data-aos="fade-up" data-aos-duration="3000" class="card">
                 <img src="../img/img-card.png" alt="">
                 <p class="parrafoCards">Hisopos sin plástico</p>
                 <p class="parrafoCards">Madera de bambú</p>
@@ -62,7 +69,7 @@
                 <p class="parrafoCards">Vegano</p>
                 <p class="parrafoCards">Biodegradable</p>
             </article>
-            <article class="card">
+            <article data-aos="fade-left" data-aos-duration="3000" class="card">
                 <img src="../img/img-card-2.png" alt="">
                 <p class="parrafoCards">Hilo Dental</p>
                 <p class="parrafoCards">Biodegradable</p>                
@@ -82,5 +89,9 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Merriweather:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--LINK ANIMATE.STYLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--LINK FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--LINK CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Nuestra Tierra</title>
 </head>
@@ -16,7 +23,7 @@
         <img class="imgLogo" src="../img/Logo1sinFondo.png" alt="">
         <h1 class="tituloHeader">Nuestra Tierra</h1>
     </header>
-    <nav>
+    <nav data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="nosotros.html">NOSOTROS</a></li>
@@ -27,45 +34,64 @@
     </nav>
     <main>
         <section class="primerasectionNosotros">
-            
-            
-            <img class="imgNosotros" src="../img/NuestraTierraNosotros.png" alt="">
-            <div class="iconos-texto-Nosotros">
-                <i class="fa-solid fa-recycle"></i>
-                <p class="parrafoNosotros">Nuestra Tierra es un emprendimiento que nace en el año 2021, en San Juan, Argentina.</p>
-                <i class="fa-solid fa-leaf"></i>
-                <p class="parrafoNosotros">Nace con el objetivo de reemplazar la utilización del plástico de un solo uso o de corta vida útil a través del desarrollo y comercialización
-                    de productos con materiales alternativos sustentables.</p>
-                <i class="fa-solid fa-trash-can"></i>
-                <p class="parrafoNosotros">¿Qué hace NUESTRA TIERRA?
-                    Buscamos poner a disposición del consumidor
-                    productos sostenibles, fabricados de forma ética
-                    y con materiales naturales o de bajo impacto
-                    ambiental.</p>
-                <i class="fa-solid fa-seedling"></i>
-                <p class="parrafoNosotros">¿Qué esperamos del futuro?
-                    Que nuestros productos sostenibles inspiren un cambio
-                    de consciencia y sean un vehículo para generar menor
-                    impacto ambiental.</p>
-            </div>
-            
-            
-                
-            
+                <div>
+                    <img class="imgNosotros animate__animated animate__fadeInLeft" src="../img/imgContacto.png" alt="">
+                </div>
+                    <div class="iconosNosotros animate__animated animate__fadeInUp">
+                        <i class="fa-solid fa-recycle"></i>
+                        <i class="fa-solid fa-leaf"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>   
+                    <div class="parrafosNosotros animate__animated animate__fadeInRight">
+                        <p>Nuestra Tierra es un emprendimiento que nace en el año 2021, en San Juan, Argentina.</p>
+                        <p>Nace con el objetivo de reemplazar la utilización del plástico de un solo uso o de corta vida útil a través del desarrollo y comercialización
+                            de productos con materiales alternativos sustentables.</p>
+                        <p>¿Qué hace NUESTRA TIERRA?
+                            Buscamos poner a disposición del consumidor
+                            productos sostenibles, fabricados de forma ética
+                            y con materiales naturales o de bajo impacto
+                            ambiental.</p>
+                        <p>¿Qué esperamos del futuro?
+                            Que nuestros productos sostenibles inspiren un cambio
+                            de consciencia y sean un vehículo para generar menor
+                            impacto ambiental.</p>
+                    </div> 
         </section>
-        <section>
-
+        <section class="segundasectionMain">
+            <i class="fa-solid fa-globe"></i>
+            <h2>Nuestra Tierra te propone una rutina de cuidado personal naturalmente amigable con vos y el planeta</h2>
+        </section>
+        <section class="valoresNosotros">
+            <h2>Nuestros Valores</h2>
+            <ul class="listaIconos">
+                <li><i class="fa-solid fa-tree"></i></li>
+                <li><i class="fa-solid fa-users"></i></li>
+                <li><i class="fa-brands fa-pagelines"></i></li>
+                <li><i class="fa-solid fa-earth-americas"></i></li>
+                <li><i class="fa-regular fa-thumbs-up"></i></li>
+            </ul>
+            <ul class="listaValores">
+                <li><h3>SOSTENIBILIDAD</h3></li>
+                <li><h3>CONSCIENCIA</h3></li>
+                <li><h3>EQUIDAD</h3></li>
+                <li><h3>INTEGRIDAD</h3></li>
+                <li><h3>POSITIVIDAD</h3></li>
+            </ul>    
         </section>
     </main>
     <footer>
         <img src="../img/Logo1sinFondo.png" alt="">
         <p>Nuestra Tierra - Todos los derechos reservados</p>
-        
         <div class="iconosFooter">
             <i class="fa-brands fa-whatsapp"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

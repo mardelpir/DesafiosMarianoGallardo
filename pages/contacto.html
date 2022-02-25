@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Merriweather:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--LINK ANIMATE.STYLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--LINK FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--LINK CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Nuestra Tierra</title>
 </head>
@@ -16,7 +23,7 @@
         <img class="imgLogo" src="../img/Logo1sinFondo.png" alt="">
         <h1 class="tituloHeader">Nuestra Tierra</h1>
     </header>
-    <nav>
+    <nav data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="./nosotros.html">NOSOTROS</a></li>
@@ -34,16 +41,17 @@
             <h2>Nuestra Tierra te propone una rutina de cuidado personal naturalmente amigable con vos y el planeta</h2>
         </section>
         <section>
-            <h2>¡Contáctanos!</h2>
+            
             <div class="container">
+                <h2>¡Contáctanos!</h2>
                 <form action="">
                     <label for="Nombre">Nombre</label>
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Tu Nombre">
+                    <input data-aos="flip-left" data-aos-duration="1500" type="text" id="Nombre" name="Nombre" placeholder="Tu Nombre">
                     <label for="Email">Email</label>
-                    <input type="text" id="Email" name="Email" placeholder="Tu Email">
+                    <input data-aos="flip-right" data-aos-duration="1500" type="text" id="Email" name="Email" placeholder="Tu Email">
                     <label for="Tu Mensaje">Tu Mensaje</label>
-                    <textarea name="Tu Mensaje" id="Tu Mensaje" rows="5" placeholder="Tu Mensaje"></textarea>
-                    <input type="submit" value="Enviar">
+                    <textarea data-aos="flip-up" data-aos-duration="1500" name="Tu Mensaje" id="Tu Mensaje" rows="5" placeholder="Tu Mensaje"></textarea>
+                    <input data-aos="zoom-in" data-aos-duration="1500" type="submit" value="Enviar">
                 </form>
             </div>
         </section>
@@ -58,5 +66,9 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
