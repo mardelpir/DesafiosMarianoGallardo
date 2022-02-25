@@ -58,7 +58,7 @@ ul{
     width: 90%;
 }
 
-li :hover{
+nav li :hover{
     background-color: rgb(185, 159, 209);
 }
 a{
@@ -355,3 +355,186 @@ input[type=text], textarea {
   .container h2{
       margin-bottom: 2rem;
   }
+
+  @media only screen and (max-width:480px){ 
+      /*MQ HEADER Y NAV*/
+      header{
+          flex-direction: column;
+      }
+      
+      ul{
+          flex-direction: column;
+      }
+      a{
+          font-size: 1.5rem;
+      }
+      /*MQ INDEX*/
+      .textoprimeraSeccion p{
+          font-size: 0.8rem;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          max-height: 100%;
+          flex-wrap: nowrap;
+      }
+      .textoprimeraSeccion h2{
+          font-size: 1.5rem;
+      }
+      
+      .primeraSection{
+          height: auto;
+      }
+      .segundasectionMain{
+          font-size: 0.8rem;
+      }
+      .tercerasectionMain{
+          flex-direction: column;
+          align-items: center;
+      }
+      .textoterceraSection h2{
+          font-size: 1.5rem;
+      }
+      .imgterceraSection{
+          display: none;
+      }
+      /*MQ FOOTER*/
+      footer{
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+          text-align: center;
+      }
+      .iconosFooter{
+          width: 20%;
+          justify-content: space-between;
+          margin-top: 1rem;
+      }
+      /*MQ NOSOTROS*/
+      .iconosNosotros{
+          display: none;
+      }
+      .parrafosNosotros{
+          display: none;
+      }
+      .listaIconos{
+          flex-direction: row;
+      }
+      /*MQ PRODUCTOS*/
+      .imgProductos{
+          display: none;
+      }
+      .tituloProductos{
+          line-height: 3rem;
+          font-size: 2.4rem;
+      }
+
+      .contenedor-cards{
+          flex-direction: column;
+      }
+      /*MQ SUSTENTABILIDAD*/
+      .textoSustentabilidad{
+          flex-direction: column;
+      }
+      .textoSustentabilidad h2{
+          font-size: 2.2rem;
+      }
+      .textoSustentabilidad p{
+          font-size: 1rem;
+      }
+  }
+
+@media only screen and (max-width:768px){
+    /*MQ HEADER Y NAV*/
+    header{
+        flex-direction: column;
+    }
+    
+    ul{
+        flex-direction: column;
+    }
+    a{
+        font-size: 1.5rem;
+    }
+    /*MQ INDEX*/
+    .textoprimeraSeccion p{
+        font-size: 1.5rem;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        max-height: 100%;
+        flex-wrap: nowrap;
+        margin-left: 2rem;
+    }
+    .textoprimeraSeccion h2{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        
+    }
+    
+    .primeraSection{
+        height: auto;
+    }
+    .segundasectionMain{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .tercerasectionMain{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoterceraSection h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .textoterceraSection p{
+        font-size: 1.5rem;
+    }
+    
+    /*MQ FOOTER*/
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        text-align: center;
+    }
+    .iconosFooter{
+        width: 20%;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    /*MQ NOSOTROS*/
+    .iconosNosotros{
+        font-size: 1rem;
+    }
+    .parrafosNosotros{
+        font-size: 1rem;
+    }
+    .listaIconos{
+        flex-direction: row;
+    }
+    /*MQ PRODUCTOS*/
+    .imgProductos{
+        display: none;
+    }
+    .tituloProductos{
+        line-height: 3rem;
+        font-size: 2.4rem;
+    }
+
+    .contenedor-cards{
+        flex-direction: column;
+    }
+    /*MQ SUSTENTABILIDAD*/
+    .textoSustentabilidad{
+        flex-direction: column;
+    }
+    .textoSustentabilidad h2{
+        font-size: 2.2rem;
+    }
+    .textoSustentabilidad p{
+        font-size: 1rem;
+    }
+}
+  
