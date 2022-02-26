@@ -41,6 +41,7 @@ header{
 /*FIN ESTILO HEADER*/
 /*ESTILO NAVEGACION*/
 nav{
+    font-family: 'Mali', cursive;
     border: 2px dashed rgb(208, 198, 231);
     margin-bottom: 2rem;
     display: flex;
@@ -59,7 +60,7 @@ ul{
 }
 
 nav li :hover{
-    background-color: rgb(185, 159, 209);
+    background-color: rgb(194, 179, 230);
 }
 a{
     text-decoration: none;
@@ -75,6 +76,7 @@ footer{
     align-items: center;
     
 }
+
 
 .iconosFooter{
     display: flex;
@@ -172,8 +174,8 @@ p{
 .iconosNosotros{
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
     width: 15%;
-    font-size: 1.6rem;
     justify-content: space-around;
     align-items:center;
 }
@@ -209,6 +211,7 @@ p{
     align-items: center;
     gap: 8rem;
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .listaValores{
