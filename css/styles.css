@@ -38,7 +38,7 @@ header{
 
 .tituloHeader{
     font-family: 'Mali', cursive;
-    font-size: 3.75rem;
+    font-size: 3.75em;
     font-weight: 100;
     text-align: center;
     width: 80%;
@@ -69,10 +69,9 @@ nav li :hover{
 }
 a{
     text-decoration: none;
-    font-size: 2rem;
-    color: rgb(182, 133, 41);
+    font-size: 2em;
 }
-/*
+
 /*FIN ESTILO NAVEGACION*/
 /*ESTILO FOOTER*/
 footer{
@@ -80,9 +79,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
-
 
 .iconosFooter{
     display: flex;
@@ -93,7 +90,7 @@ footer{
 /*ESTILO MAIN 1° SECTION*/
 p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 .primeraSection {
     display: flex;
@@ -111,10 +108,8 @@ p{
     height: auto;
 }
 
-
-
 .textoprimeraSeccion h2{
-    font-size: 3.43rem;
+    font-size: 3.43em;
 }
 
 .textoprimeraSeccion p{
@@ -129,11 +124,10 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .segundasectionMain i{
-    font-size: 2.6rem;
+    font-size: 2.6em;
     padding-bottom: 1rem;
     margin-top: 1rem;
 }
@@ -159,14 +153,13 @@ p{
 }
 
 .textoterceraSection h2{
-    font-size: 3.43rem;
+    font-size: 3.43em;
 }
 
 .textoterceraSection p{
     margin-top: 2rem;
 }
 /*FIN ESTILO MAIN 3° SECTION*/
-
 /*FIN ESTILO INDEX*/
 /*ESTILO NOSOTROS 1° SECTION*/
 
@@ -179,8 +172,7 @@ p{
 .iconosNosotros{
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-    /*width: 15%;*/
+    font-size: 1.5em;
     justify-content: space-around;
     align-items:center;
     padding-left: 3rem;
@@ -189,12 +181,9 @@ p{
 .parrafosNosotros{
     display: flex;
     flex-direction: column;
-    /*width: 30%;*/
     justify-content: space-around;
     text-align: center;
     padding-left: 3rem;
-    
-    
 }
 
 .imgNosotros{
@@ -208,29 +197,13 @@ p{
 }
 .valoresNosotros h2{
     text-align: center;
-    font-size: 3rem;
+    font-size: 3em;
     margin-bottom: 5rem;
 }
 
-.listaIconos{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 8rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+.iconosValores{
+    font-size: 2em;
 }
-
-.listaValores{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 5rem;
-    margin-bottom: 2rem;
-}
-
-
-
 /*ESTILO 1° SECTION PRODUCTOS*/
 
 .sectionProductos{
@@ -241,16 +214,15 @@ p{
     gap: 4rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    
 }
 
 .tituloProductos{
-    font-size: 3.43rem;
+    font-size: 3.43em;
     padding-bottom: 2rem;
 }
+
 .imgProductos{
     max-width: 100%;
-    min-height: 40%;
     
 }
 
@@ -259,9 +231,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
     line-height: 2rem;
-
 }
 
 .contenedor-cards{
@@ -288,16 +258,16 @@ p{
     align-items: center;
     margin: 4rem;
     gap: 5rem;
-    
 }
 .textoSustentabilidad h2{
-    font-size: 5rem;
-    width: 35%;
+    font-size: 5em;
+    line-height: 1.5;
     color: rgb(177, 149, 201);
 }
 .textoSustentabilidad p{
-    font-size: 1.5rem;
-    width: 35%;
+    font-size: 1.5em;
+    line-height: 1.5;
+
 }
 
 /*ESTILO SUSTENTABILIDAD 3° SECTION*/
@@ -359,7 +329,6 @@ input[type=text], textarea {
       text-align: center;
       margin-top: 3rem;
       margin-bottom: 3rem;
-    
   }
 
   .container h2{
@@ -375,12 +344,9 @@ input[type=text], textarea {
       ul{
           flex-direction: column;
       }
-      a{
-          font-size: 1.5rem;
-      }
       /*MQ INDEX*/
       .textoprimeraSeccion p{
-          font-size: 0.8rem;
+          font-size: 0.8em;
           flex-direction: column;
           justify-content: flex-end;
           align-items: flex-start;
@@ -388,21 +354,21 @@ input[type=text], textarea {
           flex-wrap: nowrap;
       }
       .textoprimeraSeccion h2{
-          font-size: 1.5rem;
+          font-size: 1.5em;
       }
       
       .primeraSection{
           height: auto;
       }
       .segundasectionMain{
-          font-size: 0.8rem;
+          font-size: 0.8em;
       }
       .tercerasectionMain{
           flex-direction: column;
           align-items: center;
       }
       .textoterceraSection h2{
-          font-size: 1.5rem;
+          font-size: 1.5em;
           white-space: normal;
     }
       /*MQ FOOTER*/
@@ -422,22 +388,21 @@ input[type=text], textarea {
       .primerasectionNosotros{
           flex-direction: column;
           justify-content: center;
-          /*text-align: center;*/
+          align-items: center;
+          text-align: center;
+      }
+      .imgNosotros{
+          margin-bottom: 3rem;
       }
       .iconosNosotros{
-          flex-direction: row;
-          padding-top: 2rem;
-          padding-bottom: 2rem;
-
-      }
-      
-      .listaIconos{
-          flex-direction: row;
-      }
-      /*MQ PRODUCTOS*/
-      .imgProductos{
           display: none;
       }
+      
+      
+      /*MQ PRODUCTOS*/
+      /*.imgProductos{
+          display: none;
+      }*/
       .tituloProductos{
           line-height: 3rem;
           font-size: 2.4rem;
@@ -531,8 +496,12 @@ input[type=text], textarea {
         flex-direction: row;
     }
     /*MQ PRODUCTOS*/
+    .sectionProductos{
+        flex-direction: column;
+    }
     .imgProductos{
-        display: none;
+        max-width: 100%;
+        margin-bottom: 2rem;
     }
     .tituloProductos{
         line-height: 3rem;
