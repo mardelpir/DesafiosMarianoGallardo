@@ -12,6 +12,9 @@ body{
     max-width: 100%;
     height: auto;
 }
+html{
+    overflow-x: hidden;
+}
 /*FIN ESTILO BODY*/
 /*ESTILO FONTS*/
 h2{
@@ -108,9 +111,7 @@ p{
     height: auto;
 }
 
-.textoprimeraSeccion{
-    width: 35%;
-}
+
 
 .textoprimeraSeccion h2{
     font-size: 3.43rem;
@@ -118,6 +119,7 @@ p{
 
 .textoprimeraSeccion p{
     margin-top: 2rem;
+    white-space: pre-line;
 }
 /*FIN ESTILO MAIN 1° SECTION*/
 /*ESTILO MAIN 2° SECTION*/
@@ -152,7 +154,7 @@ p{
 }
 
 .textoterceraSection{
-    width: 35%;
+    white-space: pre-line;
     margin-left: 3rem;
 }
 
@@ -178,17 +180,19 @@ p{
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    width: 15%;
+    /*width: 15%;*/
     justify-content: space-around;
     align-items:center;
+    padding-left: 3rem;
 }
 
 .parrafosNosotros{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    /*width: 30%;*/
     justify-content: space-around;
-    align-items: center;
+    text-align: center;
+    padding-left: 3rem;
     
     
 }
@@ -399,10 +403,8 @@ input[type=text], textarea {
       }
       .textoterceraSection h2{
           font-size: 1.5rem;
-      }
-      .imgterceraSection{
-          display: none;
-      }
+          white-space: normal;
+    }
       /*MQ FOOTER*/
       footer{
           flex-direction: column;
@@ -417,12 +419,18 @@ input[type=text], textarea {
           margin-top: 1rem;
       }
       /*MQ NOSOTROS*/
+      .primerasectionNosotros{
+          flex-direction: column;
+          justify-content: center;
+          /*text-align: center;*/
+      }
       .iconosNosotros{
-          display: none;
+          flex-direction: row;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+
       }
-      .parrafosNosotros{
-          display: none;
-      }
+      
       .listaIconos{
           flex-direction: row;
       }
@@ -471,6 +479,7 @@ input[type=text], textarea {
         max-height: 100%;
         flex-wrap: nowrap;
         margin-left: 2rem;
+        white-space: normal;
     }
     .textoprimeraSeccion h2{
         font-size: 1.5rem;
@@ -480,6 +489,7 @@ input[type=text], textarea {
     
     .primeraSection{
         height: auto;
+        flex-direction: column;
     }
     .segundasectionMain{
         font-size: 1rem;
