@@ -188,7 +188,6 @@ p{
 
 .imgNosotros{
     max-width: 100%;
-    
 }
 /*FIN ESTILO NOSOTROS 1° SECTION*/
 /*ESTILO 3° SECTION NOSOTROS*/
@@ -223,7 +222,6 @@ p{
 
 .imgProductos{
     max-width: 100%;
-    
 }
 
 .textoProductos{
@@ -267,7 +265,6 @@ p{
 .textoSustentabilidad p{
     font-size: 1.5em;
     line-height: 1.5;
-
 }
 
 /*ESTILO SUSTENTABILIDAD 3° SECTION*/
@@ -354,7 +351,7 @@ input[type=text], textarea {
           flex-wrap: nowrap;
       }
       .textoprimeraSeccion h2{
-          font-size: 2em;
+          font-size: 1.5em;
       }
       
       .primeraSection{
@@ -397,12 +394,7 @@ input[type=text], textarea {
       .iconosNosotros{
           display: none;
       }
-      
-      
-      /*MQ PRODUCTOS*/
-      /*.imgProductos{
-          display: none;
-      }*/
+    
       .tituloProductos{
           line-height: 3rem;
           font-size: 2.4rem;
