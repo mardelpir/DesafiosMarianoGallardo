@@ -1,0 +1,526 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*ESTILO BODY*/
+body{
+    background-image: linear-gradient(to bottom, rgb(211, 204, 227), rgb(233, 228, 240));
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+html{
+    overflow-x: hidden;
+}
+/*FIN ESTILO BODY*/
+/*ESTILO FONTS*/
+h2{
+    font-family: 'Mali', cursive;
+}
+h3{
+    font-family: 'Mali', cursive;
+}
+/*FIN ESTILO FONTS*/
+/*ESTILO HEADER*/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    
+    img{
+        padding-left: 2rem;
+    }
+
+    h1{
+        font-family: 'Mali', cursive;
+        font-size: 3.75em;
+        font-weight: 100;
+        text-align: center;
+        width: 80%;
+    }
+ }
+
+/*FIN ESTILO HEADER*/
+/*ESTILO NAVEGACION*/
+nav{
+    font-family: 'Mali', cursive;
+    border: 2px dashed rgb(208, 198, 231);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+
+    & li :hover{
+        background-color: rgb(194, 179, 230);
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 2em;
+    }
+}
+
+
+
+/*FIN ESTILO NAVEGACION*/
+/*ESTILO FOOTER*/
+footer{
+    border-top: 2px dashed rgb(208, 198, 231);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    div{
+        display: flex;
+        justify-content: space-around;
+        width: 10%;
+    }
+}
+/*FIN ESTILO FOOTER*/
+/*ESTILO MAIN 1° SECTION*/
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+.primeraSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    div{
+        h2{
+            font-size: 3.43em;
+        }
+        p{
+            margin-top: 2rem;
+            white-space: pre-line;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+/*FIN ESTILO MAIN 1° SECTION*/
+/*ESTILO MAIN 2° SECTION*/
+.segundasectionMain{
+    background-color: rgb(208, 198, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    i{
+        font-size: 2.6em;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/*FIN ESTILO MAIN 2° SECTION*/
+/*ESTILO MAIN 3° SECTION*/
+.tercerasectionMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    div{
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .textoterceraSection{
+        white-space: pre-line;
+        margin-left: 3rem;
+
+        h2{
+            font-size: 3.43rem;
+        }
+        p{
+            margin-top: 2rem;
+        }
+    }
+}
+
+/*FIN ESTILO MAIN 3° SECTION*/
+/*FIN ESTILO INDEX*/
+/*ESTILO NOSOTROS 1° SECTION*/
+
+.primerasectionNosotros{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.iconosNosotros{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: space-around;
+    align-items:center;
+    padding-left: 3rem;
+}
+
+.parrafosNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+.imgNosotros{
+    max-width: 100%;
+}
+/*FIN ESTILO NOSOTROS 1° SECTION*/
+/*ESTILO 3° SECTION NOSOTROS*/
+.valoresNosotros{
+    padding-top: 3rem;
+}
+.valoresNosotros h2{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 5rem;
+}
+
+.iconosValores{
+    font-size: 2em;
+}
+/*ESTILO 1° SECTION PRODUCTOS*/
+
+.sectionProductos{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    min-height: auto;
+    gap: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.tituloProductos{
+    font-size: 3.43em;
+    padding-bottom: 2rem;
+}
+
+.imgProductos{
+    max-width: 100%;
+}
+
+.textoProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+
+.contenedor-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.card{
+    max-width: 100%;
+    text-align: center;
+    background-color: rgb(208, 198, 231);
+    margin: 2rem;
+}
+
+/*FIN ESTILO PRODUCTOS*/
+/*ESTILO SUSTENTABILIDAD 1° SECTION*/
+
+.textoSustentabilidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    gap: 5rem;
+}
+.textoSustentabilidad h2{
+    font-size: 5em;
+    line-height: 1.5;
+    color: rgb(177, 149, 201);
+}
+.textoSustentabilidad p{
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+/*ESTILO SUSTENTABILIDAD 3° SECTION*/
+
+.sectionimgSustentabilidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSustentabilidad{
+    max-width: 100%;
+}
+/*FIN ESTILO SUSTENTABILIDAD*/
+/*ESTILO 1° SECTION CONTACTO*/
+.sectionimgContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.imgContacto{
+    max-width: 100%;
+}
+
+/*FIN ESTILO 1° SECTION CONTACTO*/
+/*ESTILO 3° SECTION CONTACTO Y FORM*/
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(177, 149, 201);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: rgb(190, 147, 228);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #8144d1;
+  }
+
+  .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+
+  .container h2{
+      margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width:480px){ 
+      /*MQ HEADER Y NAV*/
+      header{
+          flex-direction: column;
+      }
+      
+      ul{
+          flex-direction: column;
+      }
+      /*MQ INDEX*/
+      .textoprimeraSeccion p{
+          font-size: 0.8em;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          max-height: 100%;
+          flex-wrap: nowrap;
+      }
+      .textoprimeraSeccion h2{
+          font-size: 1.5em;
+      }
+      
+      .primeraSection{
+          height: auto;
+      }
+      .segundasectionMain{
+          font-size: 0.8em;
+      }
+      .tercerasectionMain{
+          flex-direction: column;
+          align-items: center;
+      }
+      .textoterceraSection h2{
+          font-size: 1.5em;
+          white-space: normal;
+    }
+      /*MQ FOOTER*/
+      footer{
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+          text-align: center;
+      }
+      .iconosFooter{
+          width: 20%;
+          justify-content: space-between;
+          margin-top: 1rem;
+      }
+      /*MQ NOSOTROS*/
+      .primerasectionNosotros{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+      .imgNosotros{
+          margin-bottom: 3rem;
+      }
+      .iconosNosotros{
+          display: none;
+      }
+    
+      .tituloProductos{
+          line-height: 3rem;
+          font-size: 2.4rem;
+      }
+
+      .contenedor-cards{
+          flex-direction: column;
+      }
+      /*MQ SUSTENTABILIDAD*/
+      .textoSustentabilidad{
+          flex-direction: column;
+      }
+      .textoSustentabilidad h2{
+          font-size: 2.2rem;
+      }
+      .textoSustentabilidad p{
+          font-size: 1rem;
+      }
+  }
+
+@media only screen and (max-width:768px){
+    /*MQ HEADER Y NAV*/
+    header{
+        flex-direction: column;
+    }
+    
+    ul{
+        flex-direction: column;
+    }
+    a{
+        font-size: 1.5rem;
+    }
+    /*MQ INDEX*/
+    .textoprimeraSeccion p{
+        font-size: 1.5rem;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        max-height: 100%;
+        flex-wrap: nowrap;
+        margin-left: 2rem;
+        white-space: normal;
+    }
+    .textoprimeraSeccion h2{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        
+    }
+    
+    .primeraSection{
+        height: auto;
+        flex-direction: column;
+    }
+    .segundasectionMain{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .tercerasectionMain{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoterceraSection h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .textoterceraSection p{
+        font-size: 1.5rem;
+    }
+    
+    /*MQ FOOTER*/
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        text-align: center;
+    }
+    .iconosFooter{
+        width: 20%;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    /*MQ NOSOTROS*/
+    .iconosNosotros{
+        font-size: 1rem;
+    }
+    .parrafosNosotros{
+        font-size: 1rem;
+    }
+    .listaIconos{
+        flex-direction: row;
+    }
+    /*MQ PRODUCTOS*/
+    .sectionProductos{
+        flex-direction: column;
+    }
+    .imgProductos{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    .tituloProductos{
+        line-height: 3rem;
+        font-size: 2.4rem;
+    }
+
+    .contenedor-cards{
+        flex-direction: column;
+    }
+    /*MQ SUSTENTABILIDAD*/
+    .textoSustentabilidad{
+        flex-direction: column;
+    }
+    .textoSustentabilidad h2{
+        font-size: 2.2rem;
+    }
+    .textoSustentabilidad p{
+        font-size: 1rem;
+    }
+}
