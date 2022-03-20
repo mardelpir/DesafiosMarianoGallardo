@@ -18,10 +18,14 @@ html {
 /*FIN ESTILO BODY*/
 /*ESTILO FONTS*/
 h2 {
-  font-family: 'Mali', cursive; }
+  font-family: "Mali", cursive; }
 
 h3 {
-  font-family: 'Mali', cursive; }
+  font-family: "Mali", cursive; }
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem; }
 
 /*FIN ESTILO FONTS*/
 /*ESTILO HEADER*/
@@ -33,7 +37,7 @@ header {
   header img {
     padding-left: 2rem; }
   header h1 {
-    font-family: 'Mali', cursive;
+    font-family: "Mali", cursive;
     font-size: 3.75em;
     font-weight: 100;
     text-align: center;
@@ -48,7 +52,8 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 100%; }
+  max-width: 100%;
+  background-color: #d3cce3; }
   nav ul {
     list-style-type: none;
     display: flex;
@@ -56,7 +61,7 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 90%; }
+    width: 100%; }
   nav li :hover {
     background-color: #c2b3e6; }
   nav a {
@@ -77,10 +82,6 @@ footer {
 
 /*FIN ESTILO FOOTER*/
 /*ESTILO MAIN 1° SECTION*/
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em; }
-
 .primeraSection {
   display: flex;
   flex-direction: row;
@@ -96,8 +97,7 @@ p {
     margin-top: 2rem;
     white-space: pre-line; }
   .primeraSection div img {
-    max-width: 100%;
-    height: auto; }
+    max-width: 100%; }
 
 /*FIN ESTILO MAIN 1° SECTION*/
 /*ESTILO MAIN 2° SECTION*/
@@ -227,13 +227,37 @@ p {
   line-height: 1.5; }
 
 /*ESTILO SUSTENTABILIDAD 3° SECTION*/
-.sectionimgSustentabilidad {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.faqs {
+  padding: 2rem; }
 
-.imgSustentabilidad {
-  max-width: 100%; }
+.titulo-faqs {
+  text-align: center;
+  padding: 1.3rem; }
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b195c9; }
+
+.accordion-button {
+  background-color: #b195c9;
+  color: black;
+  text-decoration: none; }
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #b195c9; }
+
+.boton-sust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem; }
+
+.button-sust {
+  font-family: 'Mali', cursive;
+  padding: 1rem; }
 
 /*FIN ESTILO SUSTENTABILIDAD*/
 /*ESTILO 1° SECTION CONTACTO*/
