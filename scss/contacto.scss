@@ -1,0 +1,63 @@
+@import "variables.scss";
+@mixin flexCenterrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCenterCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*ESTILO 1° SECTION CONTACTO*/
+.sectionimgContacto{
+    @include flexCenterrow;
+    margin: 4rem;
+}
+
+.imgContacto{
+    max-width: $widthImg;
+}
+
+/*FIN ESTILO 1° SECTION CONTACTO*/
+/*ESTILO 3° SECTION CONTACTO Y FORM*/
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(177, 149, 201);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: rgb(190, 147, 228);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #8144d1;
+  }
+
+  .container{
+      @include flexCenterCol;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+
+  .container h2{
+      margin-bottom: 2rem;
+      font-size: $sizeH2;
+  }

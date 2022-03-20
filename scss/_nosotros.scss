@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+/*ESTILO NOSOTROS 1° SECTION*/
+
+.primerasectionNosotros{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.iconosNosotros{
+    @include flexCol;
+    font-size: 1.5em;
+    justify-content: space-around;
+    align-items:center;
+    padding-left: 3rem;
+}
+
+.parrafosNosotros{
+    @include flexCol;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+.imgNosotros{
+    max-width: $widthImg;
+}
+/*FIN ESTILO NOSOTROS 1° SECTION*/
+/*ESTILO 3° SECTION NOSOTROS*/
+.valoresNosotros{
+    padding-top: 3rem;
+}
+.valoresNosotros h2{
+    text-align: center;
+    font-size: $sizeH2;
+    margin-bottom: 5rem;
+}
+
+.iconosValores{
+    font-size: 2em;
+}
