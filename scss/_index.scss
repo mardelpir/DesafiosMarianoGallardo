@@ -1,5 +1,5 @@
 @import "variables.scss";
-
+/*MIXINS*/
 @mixin flexCenterrow {
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
 }
-
+/*FIN MIXINS*/
 /*ESTILO MAIN 1° SECTION*/
 
 .primeraSection {
@@ -25,13 +25,16 @@
     div{
         h2{
             font-size: $sizeH2;
+            padding-left: 4rem;
         }
         p{
             margin-top: 2rem;
+            padding-left: 4rem;
             white-space: pre-line;
         }
         img{
             max-width: $widthImg;
+            padding-right: 4rem;
         }
     }
 }
@@ -48,6 +51,10 @@
         padding-bottom: 1rem;
         margin-top: 1rem;
     }
+
+    h2{
+        text-align: center
+    }
 }
 
 /*FIN ESTILO MAIN 2° SECTION*/
@@ -62,6 +69,7 @@
         img{
             max-width: $widthImg;
             height: auto;
+            padding-left: 4rem;
         }
     }
 
@@ -71,12 +79,71 @@
 
         h2{
             font-size: $sizeH2;
+            padding-right: 4rem;
         }
         p{
             margin-top: 2rem;
+            padding-right: 4rem;
         }
     }
 }
 
 /*FIN ESTILO MAIN 3° SECTION*/
 /*FIN ESTILO INDEX*/
+/*MQ INDEX*/
+@media (max-width:768px) and (min-width:0px){
+    .primeraSection{
+        height: auto;
+        @include flexCenterCol;
+        text-align: center;
+
+            div{
+                h2{
+                    font-size: 2rem;
+                    padding: 0;
+                }
+                p{
+                    font-size: 1rem;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    max-height: 100%;
+                    flex-wrap: nowrap;
+                    padding-left: 0;
+                }
+                img{
+                    padding: 0;
+                }
+            }
+    }
+    .segundasectionMain{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .tercerasectionMain{
+        flex-direction: column;
+        align-items: center;
+            div{
+                img{
+                    padding: 0;
+                    text-align: center;
+                }
+
+            }
+    }
+    .textoterceraSection{
+        h2{
+            font-size: 2rem;
+            padding: 0;
+        }
+        p{
+            font-size: 1rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            max-height: 100%;
+            flex-wrap: nowrap;
+            padding-left: 0;
+        }
+    }
+}

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/*MIXINS*/
+/*FIN MIXINS*/
 /*ESTILO MAIN 1° SECTION*/
 .primeraSection {
   display: flex;
@@ -10,12 +12,15 @@
   margin-top: 4rem;
   margin-bottom: 4rem; }
   .primeraSection div h2 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    padding-left: 4rem; }
   .primeraSection div p {
     margin-top: 2rem;
+    padding-left: 4rem;
     white-space: pre-line; }
   .primeraSection div img {
-    max-width: 100%; }
+    max-width: 100%;
+    padding-right: 4rem; }
 
 /*FIN ESTILO MAIN 1° SECTION*/
 /*ESTILO MAIN 2° SECTION*/
@@ -29,6 +34,8 @@
     font-size: 2.6em;
     padding-bottom: 1rem;
     margin-top: 1rem; }
+  .segundasectionMain h2 {
+    text-align: center; }
 
 /*FIN ESTILO MAIN 2° SECTION*/
 /*ESTILO MAIN 3° SECTION*/
@@ -42,54 +49,103 @@
   margin-bottom: 4rem; }
   .tercerasectionMain div img {
     max-width: 100%;
-    height: auto; }
+    height: auto;
+    padding-left: 4rem; }
   .tercerasectionMain .textoterceraSection {
     white-space: pre-line;
     margin-left: 3rem; }
     .tercerasectionMain .textoterceraSection h2 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      padding-right: 4rem; }
     .tercerasectionMain .textoterceraSection p {
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      padding-right: 4rem; }
 
 /*FIN ESTILO MAIN 3° SECTION*/
 /*FIN ESTILO INDEX*/
+/*MQ INDEX*/
+@media (max-width: 768px) and (min-width: 0px) {
+  .primeraSection {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .primeraSection div h2 {
+      font-size: 2rem;
+      padding: 0; }
+    .primeraSection div p {
+      font-size: 1rem;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      max-height: 100%;
+      flex-wrap: nowrap;
+      padding-left: 0; }
+    .primeraSection div img {
+      padding: 0; }
+  .segundasectionMain {
+    font-size: 0.8rem;
+    width: 100%; }
+  .tercerasectionMain {
+    flex-direction: column;
+    align-items: center; }
+    .tercerasectionMain div img {
+      padding: 0;
+      text-align: center; }
+  .textoterceraSection h2 {
+    font-size: 2rem;
+    padding: 0; }
+  .textoterceraSection p {
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-height: 100%;
+    flex-wrap: nowrap;
+    padding-left: 0; } }
+
+/*MIXINS*/
+/*FIN MIXINS*/
 /*ESTILO NOSOTROS 1° SECTION*/
 .primerasectionNosotros {
   display: flex;
   justify-content: center;
   padding-bottom: 3rem; }
-
-.iconosNosotros {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5em;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 3rem; }
-
-.parrafosNosotros {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  padding-left: 3rem; }
-
-.imgNosotros {
-  max-width: 100%; }
+  .primerasectionNosotros .imgNosotros {
+    width: 400px;
+    padding-left: 4rem; }
+  .primerasectionNosotros .iconosNosotros {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 3rem; }
+  .primerasectionNosotros .parrafosNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding-right: 4rem; }
 
 /*FIN ESTILO NOSOTROS 1° SECTION*/
 /*ESTILO 3° SECTION NOSOTROS*/
 .valoresNosotros {
   padding-top: 3rem; }
+  .valoresNosotros h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem; }
+  .valoresNosotros p {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .valoresNosotros .iconosValores {
+    font-size: 2rem; }
 
-.valoresNosotros h2 {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 5rem; }
-
-.iconosValores {
-  font-size: 2em; }
-
+/*MIXINS*/
+/* FIN MIXINS*/
 /*ESTILO 1° SECTION PRODUCTOS*/
 .sectionProductos {
   display: flex;
@@ -148,6 +204,8 @@
   color: #7a1e1e; }
 
 /*FIN ESTILO PRODUCTOS*/
+/*MIXINS*/
+/*FIN MIXINS*/
 /*ESTILO SUSTENTABILIDAD 1° SECTION*/
 .textoSustentabilidad {
   display: flex;
@@ -206,6 +264,8 @@
   padding: 1rem; }
 
 /*FIN ESTILO SUSTENTABILIDAD*/
+/*MIXINS*/
+/* FIN MIXINS*/
 /*ESTILO 1° SECTION CONTACTO*/
 .sectionimgContacto {
   display: flex;
@@ -219,6 +279,20 @@
 
 /*FIN ESTILO 1° SECTION CONTACTO*/
 /*ESTILO 3° SECTION CONTACTO Y FORM*/
+.tituloForm {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
 input[type=text], textarea {
   width: 100%;
   padding: 12px;
@@ -240,18 +314,15 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #8144d1; }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
+.col-6 {
+  width: 100%; }
 
-.container h2 {
-  margin-bottom: 2rem;
-  font-size: 3rem; }
+.col-md-6 {
+  width: 100%; }
+
+@media (max-width: 768px) and (min-width: 0px) {
+  .tituloForm {
+    font-size: 1.5rem; } }
 
 * {
   margin: 0;
@@ -341,26 +412,6 @@ footer {
     flex-direction: column; }
   ul {
     flex-direction: column; }
-  /*MQ INDEX*/
-  .textoprimeraSeccion p {
-    font-size: 0.8em;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-height: 100%;
-    flex-wrap: nowrap; }
-  .textoprimeraSeccion h2 {
-    font-size: 1.5em; }
-  .primeraSection {
-    height: auto; }
-  .segundasectionMain {
-    font-size: 0.8em; }
-  .tercerasectionMain {
-    flex-direction: column;
-    align-items: center; }
-  .textoterceraSection h2 {
-    font-size: 1.5em;
-    white-space: normal; }
   /*MQ FOOTER*/
   footer {
     flex-direction: column;
@@ -402,33 +453,6 @@ footer {
   ul {
     flex-direction: column; }
   a {
-    font-size: 1.5rem; }
-  /*MQ INDEX*/
-  .textoprimeraSeccion p {
-    font-size: 1.5rem;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-height: 100%;
-    flex-wrap: nowrap;
-    margin-left: 2rem;
-    white-space: normal; }
-  .textoprimeraSeccion h2 {
-    font-size: 1.5rem;
-    margin-left: 2rem; }
-  .primeraSection {
-    height: auto;
-    flex-direction: column; }
-  .segundasectionMain {
-    font-size: 1rem;
-    text-align: center; }
-  .tercerasectionMain {
-    flex-direction: column;
-    align-items: center; }
-  .textoterceraSection h2 {
-    font-size: 2rem;
-    margin-top: 2rem; }
-  .textoterceraSection p {
     font-size: 1.5rem; }
   /*MQ FOOTER*/
   footer {

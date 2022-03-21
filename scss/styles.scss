@@ -110,33 +110,7 @@ footer{
       ul{
           flex-direction: column;
       }
-      /*MQ INDEX*/
-      .textoprimeraSeccion p{
-          font-size: 0.8em;
-          flex-direction: column;
-          justify-content: flex-end;
-          align-items: flex-start;
-          max-height: 100%;
-          flex-wrap: nowrap;
-      }
-      .textoprimeraSeccion h2{
-          font-size: 1.5em;
-      }
       
-      .primeraSection{
-          height: auto;
-      }
-      .segundasectionMain{
-          font-size: 0.8em;
-      }
-      .tercerasectionMain{
-          flex-direction: column;
-          align-items: center;
-      }
-      .textoterceraSection h2{
-          font-size: 1.5em;
-          white-space: normal;
-    }
       /*MQ FOOTER*/
       footer{
           flex-direction: column;
@@ -196,42 +170,7 @@ footer{
     a{
         font-size: 1.5rem;
     }
-    /*MQ INDEX*/
-    .textoprimeraSeccion p{
-        font-size: 1.5rem;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        max-height: 100%;
-        flex-wrap: nowrap;
-        margin-left: 2rem;
-        white-space: normal;
-    }
-    .textoprimeraSeccion h2{
-        font-size: 1.5rem;
-        margin-left: 2rem;
-        
-    }
     
-    .primeraSection{
-        height: auto;
-        flex-direction: column;
-    }
-    .segundasectionMain{
-        font-size: 1rem;
-        text-align: center;
-    }
-    .tercerasectionMain{
-        flex-direction: column;
-        align-items: center;
-    }
-    .textoterceraSection h2{
-        font-size: 2rem;
-        margin-top: 2rem;
-    }
-    .textoterceraSection p{
-        font-size: 1.5rem;
-    }
     
     /*MQ FOOTER*/
     footer{

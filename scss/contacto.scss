@@ -1,4 +1,5 @@
 @import "variables.scss";
+/*MIXINS*/
 @mixin flexCenterrow {
   display: flex;
   flex-direction: row;
@@ -12,7 +13,7 @@
   justify-content: center;
   align-items: center;
 }
-
+/* FIN MIXINS*/
 /*ESTILO 1° SECTION CONTACTO*/
 .sectionimgContacto{
     @include flexCenterrow;
@@ -25,6 +26,17 @@
 
 /*FIN ESTILO 1° SECTION CONTACTO*/
 /*ESTILO 3° SECTION CONTACTO Y FORM*/
+.tituloForm{
+  margin-bottom: 2rem;
+  font-size: $sizeH2;
+  text-align: center
+} 
+.container{
+  @include flexCenterCol;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
 input[type=text], textarea {
     width: 100%;
@@ -50,14 +62,16 @@ input[type=text], textarea {
     background-color: #8144d1;
   }
 
-  .container{
-      @include flexCenterCol;
-      text-align: center;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+  .col-6{
+    width: 100%;
+  }
+  .col-md-6{
+    width: 100%;
   }
 
-  .container h2{
-      margin-bottom: 2rem;
-      font-size: $sizeH2;
+  @media (max-width:768px) and (min-width:0px){
+      .tituloForm{
+        font-size: 1.5rem;
+      }
+    
   }
