@@ -16,63 +16,69 @@
 }
 /*FIN MIXINS*/
 /*ESTILO SUSTENTABILIDAD 1° SECTION*/
-
 .textoSustentabilidad{
-    @include flexCenterrow;
+    @include flexCenterCol();
     margin: 4rem;
-    gap: 5rem;
-}
-.textoSustentabilidad h2{
-    /*font-size: $sizeH2;*/
-    width: 30%;
-    font-size: 4rem;
-    line-height: 1.5;
-    color: rgb(177, 149, 201);
-}
-.textoSustentabilidad p{
-   /* font-size: $sizeParrafos;*/
-   font-size: 2rem;
-    line-height: 1.5;
-    width: 30%;
-}
+    gap: 3rem;
 
+    h2{
+        font-size: $sizeH2;
+        line-height: 1.5;
+        color: rgb(177, 149, 201);
+    }
+    p{
+        font-size: $sizeParrafos;
+        line-height: 1.5;
+     }
+}
 /*ESTILO SUSTENTABILIDAD 3° SECTION*/
-
 .faqs{
     padding: 2rem;
-}
-.titulo-faqs{
-    text-align: center;
-    padding: 1.3rem;
-    font-size: $sizeH2;
-}
 
-.accordion-item{
-    @include flexCenterCol;
-    background-color: rgb(177, 149, 201);
-}
-
-
-.accordion-button{
-    background-color: rgb(177, 149, 201);
-    color: black;
-    text-decoration: none;
-}
-
-.accordion-button:not(.collapsed){
-    color: black;
-    background-color: rgb(177, 149, 201);
-}
-
-.boton-sust{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;    
-}
-
-.button-sust{
-    font-family: 'Mali', cursive;
-    padding: 1rem;
+    h2{
+        text-align: center;
+        padding: 1.3rem;
+        font-size: $sizeH2;
+    }
+    p{
+        font-weight: bold;
+    }
+    .accordion-item{
+        @include flexCenterCol;
+        background-color: rgb(177, 149, 201);
+    }
+    .accordion-button{
+        background-color: rgb(177, 149, 201);
+        color: black;
+        text-decoration: none;
+    }
+    .accordion-button:not(.collapsed){
+        color: black;
+        background-color: rgb(177, 149, 201);
+    }
+    .boton-sust{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;    
+    }
+    .button-sust{
+        font-family: 'Mali', cursive;
+        padding: 1rem;
+    }
 }
 /*FIN ESTILO SUSTENTABILIDAD*/
+@media (max-width:768px) and (min-width:0px){
+    .textoSustentabilidad{
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        h2{
+            font-size: $sizeH2MQ;
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: $sizeParrafosMQ;
+        }
+    }
+}

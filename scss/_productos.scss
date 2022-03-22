@@ -23,57 +23,87 @@
     gap: 4rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
+
+        .textoProductos{
+            @include flexCenterCol;
+            line-height: 2rem;
+            padding-left: 3rem;
+        }
+
+        h2{
+            font-size: $sizeH2;
+            padding-bottom: 2rem;
+        }
+
+        .parrafoProductos{
+            text-align: center; 
+        }
+
+        img{
+            max-width: 100%;
+            padding-left: 3rem;
+        }
 }
 
-.tituloProductos{
-    font-size: $sizeH2;
-    padding-bottom: 2rem;
-}
 
-.imgProductos{
-    max-width: 100%;
-    padding-left: 3rem;
-}
-
-.textoProductos{
-    @include flexCenterCol;
-    line-height: 2rem;
-    padding-left: 3rem;
-    
-}
-.parrafoProductos{
-    text-align: center;
-    
-}
 .contenedor-cards{
     @include flexCenterrow;
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
+
+    .card{
+        max-width: 100%;
+        text-align: center;
+        background-color: rgb(208, 198, 231);
+        margin: 2rem;
+    }
+
+    .btn-card{
+        padding: 0.3rem;
+        font-size: 1.5rem;
+        background-color: rgb(177, 105, 211);
+        color: rgb(67, 218, 125);
+    }
+
+    .btn-segCard{
+        @extend .btn-card;
+        color: rgb(37, 53, 143);
+    }
+    
+    .btn-terCard{
+        @extend .btn-card;
+        color: rgb(122, 30, 30);
+    }
 }
-
-.card{
-    max-width: 100%;
-    text-align: center;
-    background-color: rgb(208, 198, 231);
-    margin: 2rem;
-}
-
-.btn-card{
-    padding: 0.3rem;
-    font-size: 1.5rem;
-    background-color: rgb(177, 105, 211);
-    color: rgb(67, 218, 125);
-}
-
-.btn-segCard{
-    @extend .btn-card;
-    color: rgb(37, 53, 143);
-}
-
-.btn-terCard{
-    @extend .btn-card;
-    color: rgb(122, 30, 30);
-}
-
-
 /*FIN ESTILO PRODUCTOS*/
+
+/*MQ PRODUCTOS*/
+@media (max-width:768px) and (min-width:0px){
+    .sectionProductos{
+        flex-direction: column;
+        .textoProductos{
+            padding: 0;
+        }
+        h2{
+            font-size: $sizeH2MQ;
+        }
+        p{
+            font-size: $sizeParrafosMQ;
+        }
+        img{
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+    
+    .contenedor-cards{
+        flex-direction: column;
+
+        h5{
+            font-size: 1rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }
+}

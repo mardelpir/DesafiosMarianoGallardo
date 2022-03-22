@@ -34,7 +34,7 @@
     font-size: 2.6em;
     padding-bottom: 1rem;
     margin-top: 1rem; }
-  .segundasectionMain h2 {
+  .segundasectionMain h3 {
     text-align: center; }
 
 /*FIN ESTILO MAIN 2° SECTION*/
@@ -58,7 +58,6 @@
       font-size: 3rem;
       padding-right: 4rem; }
     .tercerasectionMain .textoterceraSection p {
-      margin-top: 2rem;
       padding-right: 4rem; }
 
 /*FIN ESTILO MAIN 3° SECTION*/
@@ -94,17 +93,26 @@
     .tercerasectionMain div img {
       padding: 0;
       text-align: center; }
-  .textoterceraSection h2 {
-    font-size: 2rem;
-    padding: 0; }
-  .textoterceraSection p {
-    font-size: 1rem;
+  .textoterceraSection {
+    text-align: center;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-height: 100%;
-    flex-wrap: nowrap;
-    padding-left: 0; } }
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 0 !important; }
+    .textoterceraSection h2 {
+      font-size: 2rem !important;
+      padding: 0 !important; }
+    .textoterceraSection p {
+      font-size: 1rem;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      max-height: 100%;
+      flex-wrap: nowrap;
+      padding: 0 !important;
+      margin-top: 2rem; } }
 
 /*MIXINS*/
 /*FIN MIXINS*/
@@ -112,7 +120,8 @@
 .primerasectionNosotros {
   display: flex;
   justify-content: center;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  gap: 3rem; }
   .primerasectionNosotros .imgNosotros {
     width: 400px;
     padding-left: 4rem; }
@@ -123,7 +132,7 @@
     justify-content: space-around;
     align-items: center;
     padding-left: 3rem; }
-  .primerasectionNosotros .parrafosNosotros {
+  .primerasectionNosotros p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -139,10 +148,36 @@
     font-size: 3rem;
     margin-bottom: 5rem; }
   .valoresNosotros p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold; }
-  .valoresNosotros .iconosValores {
-    font-size: 2rem; }
+
+/*MQ NOSOTROS*/
+@media (max-width: 1100px) and (min-width: 0px) {
+  .primerasectionNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0; }
+    .primerasectionNosotros .imgNosotros {
+      padding: 0;
+      margin: 0;
+      max-width: 100%; }
+    .primerasectionNosotros .iconosNosotros {
+      display: flex;
+      flex-direction: row;
+      font-size: 1rem;
+      gap: 1rem;
+      padding: 0; }
+    .primerasectionNosotros p {
+      font-size: 1rem;
+      padding-right: 0; }
+  .valoresNosotros h2 {
+    font-size: 2rem;
+    margin: 0; }
+  .valoresNosotros p {
+    font-size: 1rem; } }
 
 /*MIXINS*/
 /* FIN MIXINS*/
@@ -157,25 +192,21 @@
   gap: 4rem;
   margin-top: 4rem;
   margin-bottom: 4rem; }
-
-.tituloProductos {
-  font-size: 3rem;
-  padding-bottom: 2rem; }
-
-.imgProductos {
-  max-width: 100%;
-  padding-left: 3rem; }
-
-.textoProductos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 2rem;
-  padding-left: 3rem; }
-
-.parrafoProductos {
-  text-align: center; }
+  .sectionProductos .textoProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    padding-left: 3rem; }
+  .sectionProductos h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem; }
+  .sectionProductos .parrafoProductos {
+    text-align: center; }
+  .sectionProductos img {
+    max-width: 100%;
+    padding-left: 3rem; }
 
 .contenedor-cards {
   display: flex;
@@ -184,101 +215,106 @@
   align-items: center;
   margin-top: 3.5rem;
   margin-bottom: 3.5rem; }
-
-.card {
-  max-width: 100%;
-  text-align: center;
-  background-color: #d0c6e7;
-  margin: 2rem; }
-
-.btn-card, .btn-segCard, .btn-terCard {
-  padding: 0.3rem;
-  font-size: 1.5rem;
-  background-color: #b169d3;
-  color: #43da7d; }
-
-.btn-segCard {
-  color: #25358f; }
-
-.btn-terCard {
-  color: #7a1e1e; }
+  .contenedor-cards .card {
+    max-width: 100%;
+    text-align: center;
+    background-color: #d0c6e7;
+    margin: 2rem; }
+  .contenedor-cards .btn-card, .contenedor-cards .btn-segCard, .contenedor-cards .btn-terCard {
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    background-color: #b169d3;
+    color: #43da7d; }
+  .contenedor-cards .btn-segCard {
+    color: #25358f; }
+  .contenedor-cards .btn-terCard {
+    color: #7a1e1e; }
 
 /*FIN ESTILO PRODUCTOS*/
+/*MQ PRODUCTOS*/
+@media (max-width: 768px) and (min-width: 0px) {
+  .sectionProductos {
+    flex-direction: column; }
+    .sectionProductos .textoProductos {
+      padding: 0; }
+    .sectionProductos h2 {
+      font-size: 2rem; }
+    .sectionProductos p {
+      font-size: 1rem; }
+    .sectionProductos img {
+      max-width: 100%;
+      padding: 0; }
+  .contenedor-cards {
+    flex-direction: column; }
+    .contenedor-cards h5 {
+      font-size: 1rem; }
+    .contenedor-cards p {
+      font-size: .9rem; } }
+
 /*MIXINS*/
 /*FIN MIXINS*/
 /*ESTILO SUSTENTABILIDAD 1° SECTION*/
 .textoSustentabilidad {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 4rem;
-  gap: 5rem; }
-
-.textoSustentabilidad h2 {
-  /*font-size: $sizeH2;*/
-  width: 30%;
-  font-size: 4rem;
-  line-height: 1.5;
-  color: #b195c9; }
-
-.textoSustentabilidad p {
-  /* font-size: $sizeParrafos;*/
-  font-size: 2rem;
-  line-height: 1.5;
-  width: 30%; }
+  gap: 3rem; }
+  .textoSustentabilidad h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #b195c9; }
+  .textoSustentabilidad p {
+    font-size: 1.2rem;
+    line-height: 1.5; }
 
 /*ESTILO SUSTENTABILIDAD 3° SECTION*/
 .faqs {
   padding: 2rem; }
-
-.titulo-faqs {
-  text-align: center;
-  padding: 1.3rem;
-  font-size: 3rem; }
-
-.accordion-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #b195c9; }
-
-.accordion-button {
-  background-color: #b195c9;
-  color: black;
-  text-decoration: none; }
-
-.accordion-button:not(.collapsed) {
-  color: black;
-  background-color: #b195c9; }
-
-.boton-sust {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem; }
-
-.button-sust {
-  font-family: 'Mali', cursive;
-  padding: 1rem; }
+  .faqs h2 {
+    text-align: center;
+    padding: 1.3rem;
+    font-size: 3rem; }
+  .faqs p {
+    font-weight: bold; }
+  .faqs .accordion-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b195c9; }
+  .faqs .accordion-button {
+    background-color: #b195c9;
+    color: black;
+    text-decoration: none; }
+  .faqs .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #b195c9; }
+  .faqs .boton-sust {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem; }
+  .faqs .button-sust {
+    font-family: 'Mali', cursive;
+    padding: 1rem; }
 
 /*FIN ESTILO SUSTENTABILIDAD*/
+@media (max-width: 768px) and (min-width: 0px) {
+  .textoSustentabilidad {
+    margin: 0;
+    padding: 0;
+    gap: 0; }
+    .textoSustentabilidad h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+    .textoSustentabilidad p {
+      font-size: 1rem; } }
+
 /*MIXINS*/
 /* FIN MIXINS*/
-/*ESTILO 1° SECTION CONTACTO*/
-.sectionimgContacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem; }
-
-.imgContacto {
-  max-width: 100%; }
-
-/*FIN ESTILO 1° SECTION CONTACTO*/
-/*ESTILO 3° SECTION CONTACTO Y FORM*/
+/*ESTILO 1° SECTION CONTACTO Y FORM*/
 .tituloForm {
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -292,37 +328,44 @@
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem; }
+  .container input[type=text], .container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b195c9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; }
+  .container input[type=submit] {
+    background-color: #be93e4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+  .container input[type=submit]:hover {
+    background-color: #8144d1; }
+  .container .col-6 {
+    width: 100%; }
+  .container .col-md-6 {
+    width: 100%; }
 
-input[type=text], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #b195c9;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical; }
+/*FIN ESTILO 1° SECTION CONTACTO Y FORM*/
+/*ESTILO 3° SECTION CONTACTO*/
+.sectionimgContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem; }
+  .sectionimgContacto .imgContacto {
+    max-width: 100%; }
 
-input[type=submit] {
-  background-color: #be93e4;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-input[type=submit]:hover {
-  background-color: #8144d1; }
-
-.col-6 {
-  width: 100%; }
-
-.col-md-6 {
-  width: 100%; }
-
+/*FIN ESTILO 3° SECTION CONTACTO*/
 @media (max-width: 768px) and (min-width: 0px) {
   .tituloForm {
-    font-size: 1.5rem; } }
+    font-size: 2rem; } }
 
 * {
   margin: 0;
@@ -422,29 +465,7 @@ footer {
   .iconosFooter {
     width: 20%;
     justify-content: space-between;
-    margin-top: 1rem; }
-  /*MQ NOSOTROS*/
-  .primerasectionNosotros {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  .imgNosotros {
-    margin-bottom: 3rem; }
-  .iconosNosotros {
-    display: none; }
-  .tituloProductos {
-    line-height: 3rem;
-    font-size: 2.4rem; }
-  .contenedor-cards {
-    flex-direction: column; }
-  /*MQ SUSTENTABILIDAD*/
-  .textoSustentabilidad {
-    flex-direction: column; }
-  .textoSustentabilidad h2 {
-    font-size: 2.2rem; }
-  .textoSustentabilidad p {
-    font-size: 1rem; } }
+    margin-top: 1rem; } }
 
 @media only screen and (max-width: 768px) {
   /*MQ HEADER Y NAV*/
@@ -464,29 +485,4 @@ footer {
   .iconosFooter {
     width: 20%;
     justify-content: space-between;
-    margin-top: 1rem; }
-  /*MQ NOSOTROS*/
-  .iconosNosotros {
-    font-size: 1rem; }
-  .parrafosNosotros {
-    font-size: 1rem; }
-  .listaIconos {
-    flex-direction: row; }
-  /*MQ PRODUCTOS*/
-  .sectionProductos {
-    flex-direction: column; }
-  .imgProductos {
-    max-width: 100%;
-    margin-bottom: 2rem; }
-  .tituloProductos {
-    line-height: 3rem;
-    font-size: 2.4rem; }
-  .contenedor-cards {
-    flex-direction: column; }
-  /*MQ SUSTENTABILIDAD*/
-  .textoSustentabilidad {
-    flex-direction: column; }
-  .textoSustentabilidad h2 {
-    font-size: 2.2rem; }
-  .textoSustentabilidad p {
-    font-size: 1rem; } }
+    margin-top: 1rem; } }
