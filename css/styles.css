@@ -93,25 +93,25 @@
     .tercerasectionMain div img {
       padding: 0;
       text-align: center; }
-  .textoterceraSection {
+  .tercerasectionMain .textoterceraSection {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin-left: 0 !important; }
-    .textoterceraSection h2 {
-      font-size: 2rem !important;
-      padding: 0 !important; }
-    .textoterceraSection p {
+    margin-left: 0; }
+    .tercerasectionMain .textoterceraSection h2 {
+      font-size: 2rem;
+      padding: 0; }
+    .tercerasectionMain .textoterceraSection p {
       font-size: 1rem;
       flex-direction: column;
       justify-content: flex-end;
       align-items: flex-start;
       max-height: 100%;
       flex-wrap: nowrap;
-      padding: 0 !important;
+      padding: 0;
       margin-top: 2rem; } }
 
 /*MIXINS*/
@@ -405,7 +405,7 @@ header {
     padding-left: 2rem; }
   header h1 {
     font-family: "Mali", cursive;
-    font-size: 3.75em;
+    font-size: 3.75rem;
     font-weight: 100;
     text-align: center;
     width: 80%; }
@@ -471,10 +471,10 @@ footer {
   /*MQ HEADER Y NAV*/
   header {
     flex-direction: column; }
-  ul {
-    flex-direction: column; }
-  a {
-    font-size: 1.5rem; }
+    header ul {
+      flex-direction: column; }
+    header a {
+      font-size: 1.5rem; }
   /*MQ FOOTER*/
   footer {
     flex-direction: column;
@@ -482,7 +482,11 @@ footer {
     justify-content: space-between;
     gap: 2rem;
     text-align: center; }
-  .iconosFooter {
-    width: 20%;
-    justify-content: space-between;
-    margin-top: 1rem; } }
+    footer .iconosFooter {
+      width: 20%;
+      justify-content: space-between;
+      margin-top: 1rem; } }
+
+@media (max-width: 768px) and (min-width: 0px) {
+  header h1 {
+    font-size: 2.9rem; } }

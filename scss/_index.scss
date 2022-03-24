@@ -15,7 +15,6 @@
 }
 /*FIN MIXINS*/
 /*ESTILO MAIN 1° SECTION*/
-
 .primeraSection {
     @include flexCenterrow;
     gap: 4rem;
@@ -38,8 +37,6 @@
         }
     }
 }
-
-
 /*FIN ESTILO MAIN 1° SECTION*/
 /*ESTILO MAIN 2° SECTION*/
 .segundasectionMain{
@@ -56,7 +53,6 @@
         text-align: center
     }
 }
-
 /*FIN ESTILO MAIN 2° SECTION*/
 /*ESTILO MAIN 3° SECTION*/
 .tercerasectionMain{
@@ -72,7 +68,6 @@
             padding-left: 4rem;
         }
     }
-
     .textoterceraSection{
         white-space: pre-line;
         margin-left: 3rem;
@@ -86,7 +81,6 @@
         }
     }
 }
-
 /*FIN ESTILO MAIN 3° SECTION*/
 /*FIN ESTILO INDEX*/
 /*MQ INDEX*/
@@ -131,25 +125,27 @@
                 }
             }
     }
-    .textoterceraSection{
-        text-align: center;
-        @include flexCenterCol;
-        padding: 0;
-        margin-left: 0 !important;
+    .tercerasectionMain{
+        .textoterceraSection{
+            text-align: center;
+            @include flexCenterCol;
+            padding: 0;
+            margin-left: 0;
 
-        h2{
-            font-size: $sizeH2MQ !important; 
-            padding: 0 !important;
-        }
-        p{
-            font-size: $sizeParrafosMQ;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            max-height: 100%;
-            flex-wrap: nowrap;
-            padding: 0 !important;
-            margin-top: 2rem;
+            h2{
+                font-size: $sizeH2MQ; 
+                padding: 0;
+            }
+            p{
+                font-size: $sizeParrafosMQ;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                max-height: 100%;
+                flex-wrap: nowrap;
+                padding: 0;
+                margin-top: 2rem;
+            }
         }
     }
 }

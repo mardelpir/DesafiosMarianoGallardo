@@ -36,7 +36,6 @@
           margin-bottom: 16px;
           resize: vertical;
         }
-
         input[type=submit] {
           background-color: rgb(190, 147, 228);
           color: white;
@@ -45,21 +44,16 @@
           border-radius: 4px;
           cursor: pointer;
         }
-
         input[type=submit]:hover {
           background-color: #8144d1;
         }
-
         .col-6{
           width: 100%;
         }
         .col-md-6{
           width: 100%;
         }
-    
 }
-
-
 /*FIN ESTILO 1° SECTION CONTACTO Y FORM*/
 /*ESTILO 3° SECTION CONTACTO*/
 .sectionimgContacto{
@@ -70,13 +64,9 @@
       max-width: $widthImg;
   }
 }
-
 /*FIN ESTILO 3° SECTION CONTACTO*/
-
-
   @media (max-width:768px) and (min-width:0px){
       .tituloForm{
         font-size: $sizeH2MQ;
       }
-    
   }

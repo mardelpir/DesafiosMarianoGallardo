@@ -15,7 +15,6 @@
 }
 /* FIN MIXINS*/
 /*ESTILO 1° SECTION PRODUCTOS*/
-
 .sectionProductos{
     @include flexCenterCol;
     max-width: 100%;
@@ -44,8 +43,6 @@
             padding-left: 3rem;
         }
 }
-
-
 .contenedor-cards{
     @include flexCenterrow;
     margin-top: 3.5rem;
@@ -76,7 +73,6 @@
     }
 }
 /*FIN ESTILO PRODUCTOS*/
-
 /*MQ PRODUCTOS*/
 @media (max-width:768px) and (min-width:0px){
     .sectionProductos{
@@ -95,7 +91,6 @@
             padding: 0;
         }
     }
-    
     .contenedor-cards{
         flex-direction: column;
 
