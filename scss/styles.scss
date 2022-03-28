@@ -1,6 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import "variables", "index", "nosotros", "productos", "sustentabilidad", "contacto";
 
+@mixin footerCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -91,6 +98,10 @@ footer{
         display: flex;
         justify-content: space-around;
         width: 10%;
+
+        i{
+            font-size: 1.3rem;
+        }
     }
 }
 /*FIN ESTILO FOOTER*/
@@ -103,21 +114,7 @@ footer{
       
       ul{
           flex-direction: column;
-      }
-      
-      /*MQ FOOTER*/
-      footer{
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          gap: 2rem;
-          text-align: center;
-      }
-      .iconosFooter{
-          width: 20%;
-          justify-content: space-between;
-          margin-top: 1rem;
-      }
+      }  
 }
 @media only screen and (max-width:768px){
     /*MQ HEADER Y NAV*/
@@ -133,24 +130,26 @@ footer{
         }
     }
     /*MQ FOOTER*/
-    footer{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2rem;
-        text-align: center;
-
-        .iconosFooter{
-            width: 20%;
-            justify-content: space-between;
-            margin-top: 1rem;
-        }
-    }
+    
 }
 @media (max-width:768px) and (min-width:0px){
     header{
         h1{
             font-size: 2.9rem;
+        }
+    }
+
+    footer{
+        @include footerCol();
+        text-align: center;
+
+        div{
+
+            i{
+                font-size: 1rem;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
         }
     }
 }
