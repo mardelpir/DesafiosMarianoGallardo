@@ -244,7 +244,9 @@
     .sectionProductos h2 {
       font-size: 2rem; }
     .sectionProductos p {
-      font-size: 1rem; }
+      font-size: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem; }
     .sectionProductos img {
       max-width: 100%;
       padding: 0; }
@@ -312,9 +314,14 @@
     gap: 0; }
     .textoSustentabilidad h2 {
       font-size: 2rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-align: center; }
     .textoSustentabilidad p {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      text-align: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 3rem; } }
 
 /*MIXINS*/
 /* FIN MIXINS*/
@@ -437,7 +444,7 @@ nav {
     background-color: #c2b3e6; }
   nav a {
     text-decoration: none;
-    font-size: 2em; }
+    font-size: 2rem; }
 
 /*FIN ESTILO NAVEGACION*/
 /*ESTILO FOOTER*/
@@ -455,32 +462,26 @@ footer {
 
 /*FIN ESTILO FOOTER*/
 /*MEDIAQUERIES*/
-@media only screen and (max-width: 480px) {
-  /*MQ HEADER Y NAV*/
-  header {
-    flex-direction: column; }
-  ul {
-    flex-direction: column; } }
-
-@media only screen and (max-width: 768px) {
-  /*MQ HEADER Y NAV*/
-  header {
-    flex-direction: column; }
-    header ul {
-      flex-direction: column; }
-    header a {
-      font-size: 1.5rem; }
-  /*MQ FOOTER*/ }
-
 @media (max-width: 768px) and (min-width: 0px) {
-  header h1 {
-    font-size: 2.9rem; }
+  header {
+    flex-direction: column; }
+    header img {
+      padding: 0; }
+    header h1 {
+      font-size: 2.5rem;
+      text-align: center; }
+  nav ul {
+    flex-direction: column; }
+  nav a {
+    font-size: 1.1rem; }
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center; }
+    footer p {
+      font-size: 1rem; }
     footer div i {
       font-size: 1rem;
       padding: 1rem;

@@ -75,9 +75,14 @@
         h2{
             font-size: $sizeH2MQ;
             margin-bottom: 2rem;
+            text-align: center;
         }
         p{
             font-size: $sizeParrafosMQ;
+            text-align: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 3rem;
         }
     }
 }

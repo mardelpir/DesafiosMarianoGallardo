@@ -83,7 +83,7 @@ nav{
 
     a{
         text-decoration: none;
-        font-size: 2em;
+        font-size: 2rem;
     }
 }
 /*FIN ESTILO NAVEGACION*/
@@ -106,43 +106,33 @@ footer{
 }
 /*FIN ESTILO FOOTER*/
 /*MEDIAQUERIES*/
-  @media only screen and (max-width:480px){ 
-      /*MQ HEADER Y NAV*/
-      header{
-          flex-direction: column;
-      }
-      
-      ul{
-          flex-direction: column;
-      }  
-}
-@media only screen and (max-width:768px){
-    /*MQ HEADER Y NAV*/
+@media (max-width:768px) and (min-width:0px){
     header{
         flex-direction: column;
-        
-        
+
+        img{
+            padding: 0;
+        }
+        h1{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+  
+    }
+    nav{
         ul{
             flex-direction: column;
         }
         a{
-            font-size: 1.5rem;
+            font-size: 1.1rem;
         }
     }
-    /*MQ FOOTER*/
-    
-}
-@media (max-width:768px) and (min-width:0px){
-    header{
-        h1{
-            font-size: 2.9rem;
-        }
-    }
-
     footer{
         @include footerCol();
         text-align: center;
-
+        p{
+            font-size: 1rem;
+        }
         div{
 
             i{
