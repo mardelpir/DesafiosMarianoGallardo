@@ -139,7 +139,8 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    padding-right: 4rem; }
+    padding-right: 4rem;
+    padding: 1rem; }
 
 /*FIN ESTILO NOSOTROS 1° SECTION*/
 /*ESTILO 3° SECTION NOSOTROS*/
@@ -176,7 +177,8 @@
       font-size: 1rem;
       padding-right: 0;
       margin-left: 1rem;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      padding: 1rem; }
   .valoresNosotros h2 {
     font-size: 2rem;
     margin: 0; }
